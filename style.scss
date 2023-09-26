@@ -1,0 +1,126 @@
+@font-face {
+    font-family: norsebold;
+    src: url(Norse-Bold.otf);
+}
+
+:root{
+    font-family: norsebold;
+    font-size: 15px;
+    
+}
+
+h4{
+    font-size: 2rem;
+}
+
+.formImg{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    flex: 2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+    img{
+        width: 10rem;
+    }
+    
+
+}
+.logoHolder{
+    margin: 10rem 0rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body{
+    background-color:  rgb(53, 53, 53);
+
+}
+main{
+    display: flex;
+    height: 100vh;
+    padding: 0 10rem;
+
+}
+.formContent{
+    background-color: rgb(235, 235, 235);
+    color: black;
+    display: flex;
+    align-items: baseline;
+padding: 4rem 0rem;
+    justify-content: center;
+    flex-direction: column;
+    
+    flex: 4;
+    h4,fieldset{
+        padding: 0 3rem;
+        
+    }
+}
+fieldset{
+    display: flex;
+    width: 70%;
+    border: none;
+    padding: 1rem 0;
+    margin: 1rem 0;
+
+
+    label{
+        font-size: 1.3rem;
+    }
+
+    div{
+        flex: 1;
+    }
+}
+form{
+    width: 100%;
+}
+.formStyle{
+    background-color: white;
+    padding: 2rem 1.25rem;
+    
+    
+}
+
+
+input{
+
+    width: 70%;
+    height: 1.5rem;
+    border-radius: 7px;
+    border: 1px solid rgb(201, 199, 199);
+    transition: 0.5s;
+
+    &:focus{
+        outline: none;
+        border: 1px solid blue;
+    }
+
+    &:invalid{
+        border: 1px solid red;
+    }
+
+    &[type="number"]{
+        appearance: none;
+        -moz-appearance: textfield;
+    }
+
+    &[type="submit"]{
+        height: auto;
+        width: auto;
+        background-color: #596D48;
+        font-family: norsebold;
+        font-size: 1.5rem;
+        color: white;
+        border-radius: 10px;
+        padding: 0.75rem 2.5rem ;
+        margin: 2rem 1rem;
+
+    }
+
+}
